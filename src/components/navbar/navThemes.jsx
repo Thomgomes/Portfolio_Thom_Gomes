@@ -11,7 +11,7 @@ export const ThemesBtn = () => {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex w-full justify-center px-4 py-2 text-sm font-medium shadow-sm focus:outline-none -tracking-tighter">
+        <Menu.Button className="inline-flex w-full justify-center px-4 py-2 text-base font-medium shadow-sm focus:outline-none -tracking-tighter">
           Temas
           <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
         </Menu.Button>

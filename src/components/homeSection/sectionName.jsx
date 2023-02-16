@@ -1,4 +1,5 @@
 import Typical from 'react-typical'
+import { BtnAboutMeHomeSection } from './btnAboutMe'
 import './imgbox.css'
 
 export const SectionName = () => {
@@ -22,11 +23,8 @@ export const SectionName = () => {
           ]}
         />
       </h1>
-      <p className='w-[90%] relative mt-5 tracking-wider text-2xl text-green-500'>Desenvolvedor Front-end</p>
-      <div className="btn">
-        <button className='text-2xl bg-yellow-700 px-3 py-2 my-10 mx-1 tracking-widest capitalize shadow-md shadow-yellow-900 rounded-sm '>Sobre</button>
-      </div>
-
+      <p className='w-[90%] relative mt-5 tracking-wider text-2xl text-green-500 '>Desenvolvedor Front-end</p>
+      <BtnAboutMeHomeSection/>
     </div>
   )
 }
