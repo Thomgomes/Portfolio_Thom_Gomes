@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         montserrat: ['Montserrat'],
       },
+      content: {
+        'txtnone': '""',
+      },
     },
   },
   plugins: [],

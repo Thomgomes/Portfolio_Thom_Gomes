@@ -22,10 +22,14 @@ export const Navbar = () => {
         </div>
 
         <nav>
-          <ul className="flex items-center space-x-3 ml-auto">
+          <ul className="flex items-center gap-3 space-x-3 ml-auto">
             <NavLinks 
             path="*"
-            nameDescription="Sobre min"
+            nameDescription="Home"
+            />
+            <NavLinks 
+            path="*"
+            nameDescription="Sobre"
             />
             <NavLinks 
             path="*"

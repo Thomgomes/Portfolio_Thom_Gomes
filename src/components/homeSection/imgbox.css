@@ -1,0 +1,35 @@
+.wrapper::before {
+  content: '';
+  animation: obj1 6s linear infinite;
+}
+
+.wrapper::after {
+  content: '';
+  animation: obj2 6s linear infinite;
+}
+
+@keyframes obj1 {
+  50% {
+    left: -13%;
+    top: 41%;
+  }
+}
+
+@keyframes obj2 {
+  50% {
+    left: 30%;
+    bottom: 8%;
+  }
+}
+
+.imgbox img {
+  animation: animateUser 4s linear infinite;
+}
+
+
+@keyframes animateUser {
+  50% {
+    left: 30px;
+    top: -90px;
+  }
+}
