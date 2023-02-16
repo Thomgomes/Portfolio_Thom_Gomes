@@ -1,11 +1,12 @@
-import { SectionHome } from "../../components/homeSection"
-import { Navbar } from "../../components/navbar"
+import { SectionHome } from "../../container/homeSection"
+import { Navbar } from "../../container/navbar"
+
 
 
 export const Home = () => {
 
   return (
-    <div className="h-screen w-screen bg-[#250821] font-montserrat">
+    <div className="h-screen w-screen bg-[#250821] font-montserrat overflow-x-hidden">
       <div className="relative">
       <Navbar/>
       <SectionHome/>
