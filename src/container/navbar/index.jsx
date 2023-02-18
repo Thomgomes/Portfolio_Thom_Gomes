@@ -13,7 +13,6 @@ import { Bubbles } from '../../components/navbar/bublles'
 
 export const Navbar = () => {
 
-
   return (
     <navbar>
       <div className=' text-white bg-[#f5fffa0c]'>
@@ -29,23 +28,28 @@ export const Navbar = () => {
           <nav>
             <ul className="flex items-center gap-3 space-x-3 ml-auto">
               <NavLinks
-                path="*"
-                nameDescription="Home"
+                path="home"
+                class="cursor-default"
+                nameDescription={`Home`}
               />
               <NavLinks
-                path="*"
+                path="about"
+                class="cursor-pointer"
                 nameDescription="Sobre"
               />
               <NavLinks
-                path="*"
+                path="services"
+                class="cursor-pointer"
                 nameDescription="Habilidades"
               />
               <NavLinks
-                path="*"
+                path="work"
+                class="cursor-pointer"
                 nameDescription="Projetos"
               />
               <NavLinks
-                path="*"
+                path="contact"
+                class="cursor-pointer"
                 nameDescription="Contato"
               />
               <span className='opacity-50 text-2xl'>|</span>

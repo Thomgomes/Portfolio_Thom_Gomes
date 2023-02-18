@@ -1,15 +1,17 @@
+import { FixedNavIcons } from "../../components/fixedIconsBot"
 import { SectionHome } from "../../container/homeSection"
 import { Navbar } from "../../container/navbar"
 
 
 
-export const Home = () => {
+export const HomePage = () => {
 
   return (
-    <div className="h-screen w-screen bg-[#250821] dark:bg-white font-montserrat overflow-x-hidden">
+    <div className="h-screen w-screen font-montserrat" id="home">
       <div className="relative">
       <Navbar/>
       <SectionHome/>
+      <FixedNavIcons/>
       </div>
     </div>
 
