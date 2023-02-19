@@ -13,7 +13,7 @@ export const HomeLinks = () => {
         whileInView={'show'}
         viewport={{ once: false, amount: 0.7 }}
       href=""
-      className='text-blue-600/80 transition-all
+      className='text-blue-600/80 transition-all ease-linear
       hover:scale-125 hover:text-blue-500
       '
       target="_blank"
@@ -26,7 +26,7 @@ export const HomeLinks = () => {
         whileInView={'show'}
         viewport={{ once: false, amount: 0.7 }}
       href="https://github.com/Thomgomes"
-      className='text-violet-800/80 transition-all
+      className='text-violet-800/80 transition-all ease-linear
       hover:scale-125 hover:shadow-lg hover:shadow-violet-800/60 hover:rounded-full hover:text-violet-700/80
       '
       target="_blank"

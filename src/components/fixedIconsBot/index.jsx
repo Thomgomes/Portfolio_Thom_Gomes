@@ -1,4 +1,4 @@
-import { BiHomeAlt, BiUser } from 'react-icons/bi'
+import { BiHomeAlt, BiUser, BiDevices } from 'react-icons/bi'
 import { BsClipboardData, BsBriefcase, BsChatSquare, BsChatSquareText } from 'react-icons/bs'
 import { Link } from 'react-scroll'
 
@@ -37,7 +37,7 @@ export const FixedNavIcons = () => {
           smooth={true}
           spy={true}
           className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center '>
-            <BsBriefcase />
+            <BiDevices />
           </Link>
           <Link 
           to='contact' 
