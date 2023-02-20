@@ -38,12 +38,12 @@ export const Navbar = () => {
                 nameDescription="Sobre"
               />
               <NavLinks
-                path="services"
+                path="ability"
                 class="cursor-pointer"
                 nameDescription="Habilidades"
               />
               <NavLinks
-                path="work"
+                path="projects"
                 class="cursor-pointer"
                 nameDescription="Projetos"
               />

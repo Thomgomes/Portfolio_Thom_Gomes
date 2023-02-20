@@ -6,7 +6,7 @@ import { ImgBox } from '../../components/homeSection/imgbox';
 export const SectionHome = () => {
 
   return (
-    <div className="text-white z-[2]">
+    <div className="section text-white z-[2]">
       <div
         className=" wrapper
       container lg:mt-16 xl:mt-20 col-auto max-w-7xl lg:mx-auto md:mx-12 px-4 h-[70vh] flex justify-center items-center 
@@ -17,7 +17,7 @@ export const SectionHome = () => {
         <div className="w-[40%]">
           <ImgBox />
         </div>
-        
+
       </div>
     </div>
   )

@@ -24,7 +24,7 @@ export const FixedNavIcons = () => {
             <BiUser />
           </Link>
           <Link 
-          to='services' 
+          to='ability' 
           activeClass='active'
           smooth={true}
           spy={true}
@@ -32,7 +32,7 @@ export const FixedNavIcons = () => {
             <BsClipboardData />
           </Link>
           <Link 
-          to='work' 
+          to='projects' 
           activeClass='active'
           smooth={true}
           spy={true}
