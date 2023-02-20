@@ -7,7 +7,7 @@ import { Navbar } from "../../container/navbar"
 export const HomePage = () => {
 
   return (
-    <div className="h-screen w-screen font-montserrat" id="home">
+    <div className="h-screen w-screen" id="home">
       <div className="relative">
       <Navbar/>
       <SectionHome/>
