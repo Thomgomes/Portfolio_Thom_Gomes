@@ -2,16 +2,20 @@
   "name": "portifolio-thom-gomes",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://thomgomes.github.io/Portfolio_Thom_Gomes",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.11",
     "@heroicons/react": "^2.0.15",
     "framer-motion": "^9.0.4",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-countup": "^6.4.1",
     "react-dom": "^18.2.0",
