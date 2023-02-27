@@ -11,7 +11,7 @@ export const SectionHome = () => {
         className=" wrapper
       container lg:mt-16 xl:mt-20 col-auto max-w-7xl lg:mx-auto md:mx-12 px-4 h-[70vh] flex justify-center items-center 
       ">
-        <div className="lg:w-[60%] md:w-full z-10">
+        <div className="lg:w-[60%] md:w-full">
           <SectionName />
         </div>
         <div className="w-[40%]">

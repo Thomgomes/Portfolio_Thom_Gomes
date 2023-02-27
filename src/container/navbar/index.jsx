@@ -4,7 +4,7 @@ import TcodeLogo from '../../assets/Thom.Code-_1_.svg'
 
 import { LayeredWaves } from '../../components/navbar/layeredWaves'
 import { NavLinks } from '../../components/navbar/navLink'
-import { ThemesBtn } from '../../components/navbar/navThemes'
+// import { ThemesBtn } from '../../components/navbar/navThemes'
 
 import wavesGreen from '../../assets/layeredWaves/greenWaves.svg'
 import wavesGolden from '../../assets/layeredWaves/goldenWaves.svg'
@@ -25,7 +25,7 @@ export const Navbar = () => {
             </Link>
           </div>
 
-          <nav>
+          <nav className='hidden md:block'>
             <ul className="flex items-center gap-3 space-x-3 ml-auto">
               <NavLinks
                 path="home"
@@ -52,8 +52,8 @@ export const Navbar = () => {
                 class="cursor-pointer"
                 nameDescription="Contato"
               />
-              <span className='opacity-50 text-2xl'>|</span>
-              <ThemesBtn />
+              {/* <span className='opacity-50 text-2xl'>|</span> */}
+              {/* <ThemesBtn /> */}
             </ul>
           </nav>
         </div>

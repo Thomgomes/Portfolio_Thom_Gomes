@@ -9,7 +9,7 @@ import { fadein } from '../../utils/variants'
 export const SectionName = () => {
 
   return (
-    <div className='DescriptionMe'>
+    <div className='DescriptionMe md:block flex flex-col items-center justify-center'>
       <motion.span
         variants={fadein('up', 0.3)}
         initial='hidden'
@@ -40,7 +40,7 @@ export const SectionName = () => {
        initial='hidden'
        whileInView={'show'}
        viewport={{  once: false, amount: 0.7}}
-      className='w-[90%] relative mt-5 tracking-[3px] font-bold text-2xl text-green-500 pl-5 '>Desenvolvedor Front-end</motion.p>
+      className='md:w-[90%] w-[68%] relative mt-5 tracking-[3px] font-bold text-2xl text-green-500 pl-5 md:block flex flex-col items-center justify-center'>Desenvolvedor Front-end</motion.p>
       <HomeLinks />
     </div>
   )
