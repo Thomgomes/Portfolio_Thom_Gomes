@@ -8,6 +8,7 @@ export const AppRouter = () => {
     <Router>
       <Routes>
         <Route path="*" exact element={<Allpages />} />
+        <Route path="/" exact element={<Allpages />} />
         <Route path="/home" exact element={<Allpages />} />
       </Routes>
     </Router>
