@@ -18,7 +18,7 @@ export const Navbar = () => {
       <div className=' text-white bg-[#f5fffa0c]'>
         <LayeredWaves waveName={wavesGolden} />
         <Bubbles/>
-        <div className="relative container max-w-7xl mx-auto px-4 h-24 flex items-center justify-between z-[1]" >
+        <div className="relative container mx-auto px-4 h-24 flex items-center justify-between z-[1]"  id='navbar-view'>
           <div className="logo">
             <Link className="login-form-title" to="/home">
               <img className="lg:w-52 w-40 pt-5" src={TcodeLogo} alt="Thom_Code" />

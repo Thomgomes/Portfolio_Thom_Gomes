@@ -10,8 +10,8 @@ export const AboutTexts = (props) => {
       whileInView={"show"}
       viewport={{ once: false, amount: 0.3 }}
       className="flex-1 mx-2 lg:mx-0">
-      <h2 className="text-3xl mb-6 tracking-[10%] uppercase md:mx-0 mx-3">{props.h2}</h2>
-      <h3 className="text-2xl mb-6 leading-[46px] font-semibold md:mx-0 mx-3">{props.h3}</h3>
+      <h2 className="text-5xl mb-6 tracking-[10%] font-semibold md:mx-0 mx-3">{props.h2}</h2>
+      <h3 className="text-3xl mb-6 leading-[46px] font-semibold md:mx-0 mx-3">{props.h3}</h3>
       <p className="mb-4 text-xl md:mx-0 mx-3">{props.text}</p>
       <p className="mb-6 text-xl md:mx-0 mx-3">{props.text2}</p>
 

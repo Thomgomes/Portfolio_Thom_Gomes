@@ -9,14 +9,14 @@ import thomImg from '../../assets/thom.jpg'
 import '../../components/about/aboutme.css'
 import { AboutImg } from "../../components/about/aboutImg"
 import { AboutTexts } from "../../components/about/aboutTexts"
-import { Datee } from "../../utils/dateBirthday"
+// import { Datee } from "../../utils/dateBirthday"
 
 export const About = () => {
   // const [ref, inView] = useInView({
   //   threshold: 0.5,
   // })
 
-  console.log(Datee)
+  // console.log(Datee)
 
 
   return (
