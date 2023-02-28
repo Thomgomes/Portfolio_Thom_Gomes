@@ -17,3 +17,6 @@ export const Allpages = () => {
     </div>
   )
 }
+
+// bg-[#250821]
+// bg-[#13131F]

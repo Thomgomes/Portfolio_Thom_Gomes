@@ -55,7 +55,7 @@ export const Ability = () => {
       name: "PostgresSQL",
       icon: SiPostgresql,
     },
-  ]
+  ];
 
   return (
     <div className="section" id="ability">
@@ -64,13 +64,17 @@ export const Ability = () => {
           <AbilityTitle title='Habilidades' />
         </div>
         <div className="w-full h-full">
-          <div className="grid 2xl:grid-cols-8 xl:grid-cols-7 lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-4 grid-cols-3 gap-x-6 gap-y-12 ">
-            <AbilityCards 
-            key=''
-            id={Math.random}
-            icon={FaReact}
-            iconNames='teste'/>
-            <AbilityComingSoon/>
+          <div className="grid 2xl:grid-cols-8 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-x-6 gap-y-12 ">
+            {
+              cards?.map(item => (
+                <AbilityCards
+                  id={item.lenght}
+                  icon={item.icon}
+                  iconName={item.name}
+                />
+              ))
+            }
+            <AbilityComingSoon />
           </div>
         </div>
       </div>
