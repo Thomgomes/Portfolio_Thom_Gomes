@@ -10,7 +10,7 @@ export const AbilityTitle = (props) => {
       whileInView={"show"}
       viewport={{ once: true, amount: 0.3 }}
     >
-      <h2 className="text-5xl font-semibold mb-6 tracking-[10%] md:mx-0 mx-3 pb-40">{props.title}</h2>
+      <h2 className="sm:pt-0 sm2:pt-60 pt-80 sm3:pt-[500px] text-5xl font-semibold mb-6 tracking-[10%] md:mx-0 mx-3 pb-40">{props.title}</h2>
     </motion.div>
   )
 }

@@ -59,8 +59,8 @@ export const Ability = () => {
 
   return (
     <div className="section" id="ability">
-      <div className="container relative mx-auto">
-        <div className="flex items-center text-center justify-center">
+      <div className="container relative mx-auto ">
+        <div className="flex items-center text-center justify-center ">
           <AbilityTitle title='Habilidades' />
         </div>
         <div className="w-full h-full">
