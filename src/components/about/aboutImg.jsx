@@ -9,7 +9,7 @@ export const AboutImg = () => {
         variants={fadein('right', 0.3)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
         className='flex-1 relative h-[45vh] max-w-[30rem] border-red-500 '>
 
         <div className='bg-about w-full h-full bg-no-repeat bg-contain rounded-3xl transition
