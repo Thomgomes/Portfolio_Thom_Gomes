@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion'
+import { BsDisplay, BsGithub } from 'react-icons/bs'
 
 import { fadein } from '../../utils/variants'
+import { BtnGithub } from './btn/btnGithub'
+import { BtnViewProject } from './btn/btnViewProject'
 
 export const ImgProjectCard = (props) => {
 
@@ -21,16 +24,16 @@ export const ImgProjectCard = (props) => {
         className="group-hover:scale-125 transition-all duration-500"
         src={props.img}
         alt="" />
-      {/* pretitle */}
-      <div className="absolute -bottom-full left-12 
-              group-hover:bottom-24 transition-all duration-500 z-50">
-        <h6 className="text-3xl pb-5">{props.pretext}</h6>
-      </div>
-      {/* title */}
-      <div className="absolute -bottom-full left-12 
-              group-hover:bottom-14 transition-all duration-700 z-50">
-        <h5 className="text-3xl">{props.title}</h5>
-      </div>
+
+        <BtnGithub 
+        link={props.github}
+        />
+        <BtnViewProject 
+        link={props.view}
+        />
+
+
+
     </motion.div>
   )
 }

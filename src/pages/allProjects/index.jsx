@@ -1,5 +1,5 @@
 export const AllProjectsPage = () => {
   return(
-    <div>Testando</div>
+    <div>Tela em Andamento</div>
   )
  }
