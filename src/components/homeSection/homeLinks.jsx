@@ -12,7 +12,7 @@ export const HomeLinks = () => {
         initial='hidden'
         whileInView={'show'}
         viewport={{ once: false, amount: 0.7 }}
-        href=""
+        href="https://www.linkedin.com/in/thom%C3%A1s-gomes-796b8152/"
         className='text-blue-600/80 transition-all ease-linear
       hover:scale-125 hover:text-blue-500
       '
