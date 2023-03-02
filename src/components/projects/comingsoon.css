@@ -1,0 +1,25 @@
+.loader span:nth-child(3n + 3):before {
+  background: #dc9d00;
+  box-shadow: 0 0 10px #ae6211, 0 0 20px #ae6211, 0 0 30px #ae6211, 0 0 40px #ae6211,
+    0 0 50px #ae6211;
+  animation: animateSquare 2s linear infinite;
+  transform-origin: 50px;
+}
+
+@keyframes animateSquare {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+  75%,
+  90%,
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@media (min-width: 420px) {
+  .loader span:nth-child(3n + 3):before {
+    transform-origin: 75px;
+  }
+}

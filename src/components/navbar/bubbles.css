@@ -1,4 +1,4 @@
-section span {
+.sec span {
   position:absolute;
   top: 62px;
   background: transparent;
@@ -9,7 +9,7 @@ section span {
   z-index:0;
 }
 
-section span::before{
+.sec span::before{
   content:'';
   position: absolute;
   width: 100%;

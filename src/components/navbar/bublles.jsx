@@ -4,7 +4,7 @@ import './bubbles.css'
 export const Bubbles = () => {
 
   function bubblesCreate () {
-    const section = document.querySelector('section')
+    const section = document.querySelector('.sec')
     const createElement = document.createElement('span')
     let size = Math.random()*60
 
@@ -21,7 +21,7 @@ export const Bubbles = () => {
 
   return (
     <section
-    className=""
+    className="sec"
     >
 
     </section>
