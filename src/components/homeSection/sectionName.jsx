@@ -40,7 +40,7 @@ export const SectionName = () => {
        initial='hidden'
        whileInView={'show'}
        viewport={{  once: true, amount: 0.7}}
-      className='md:w-[90%] w-[68%] relative mt-5 tracking-[3px] font-bold text-2xl text-green-500 pl-5 md:block flex flex-col items-center justify-center'>Desenvolvedor Front-end</motion.p>
+      className='md:w-[90%] w-[68%] relative mt-5 tracking-[3px] font-bold text-2xl text-[#bb700f] pl-5 md:block flex flex-col items-center justify-center'>Desenvolvedor Front-end</motion.p>
       <HomeLinks />
     </div>
   )

@@ -12,13 +12,13 @@ export const AbilityCards = (props) => {
       id={props.id}
       className="w-36 h-36 backdrop-blur-2xl m-auto"
     >
-      <div className='relative h-full bg-[#13131F] rounded-xl border-4 border-[#4c4c5e] transition-all duration-200 ease-linear
+      <div className='relative h-full bg-[#13131F] rounded-xl border-4 border-[#dc9e00] transition-all duration-200 ease-linear
                       hover:scale-110 hover:rounded-2xl
       '>
-        <span className='absolute top-2 left-[14%] text-[100px] text-green-500'>
+        <span className='absolute top-2 left-[14%] text-[100px] text-[#bb700f]'>
           <props.icon />
         </span>
-        <div className='h-full flex text-center justify-center items-end text-green-200'>
+        <div className='h-full flex text-center justify-center items-end text-[#dc9e00c4]'>
           <p className='tracking-wide'>{props.iconName}</p>
         </div>
       </div>
