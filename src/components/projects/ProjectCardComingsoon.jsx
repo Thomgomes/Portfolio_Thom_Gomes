@@ -17,7 +17,7 @@ export const ProjectCardComingsoon = (props) => {
       className="group relative overflow-hidden border-2 border-[#bb700f] rounded-xl"
     >
       {/* overlay */}
-      <div className="w-full h-full absolute z-40 transition-all duration-300"></div>
+      <div className="w-full h-full absolute transition-all duration-300"></div>
       {/* img */}
 
       {/* animation by online tutorial // css Animation Effects | Css Only  */}
