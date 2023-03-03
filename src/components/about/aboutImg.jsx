@@ -10,7 +10,7 @@ export const AboutImg = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.3 }}
-        className='flex-1 relative h-[45vh] max-w-[30rem] border-red-500 '>
+        className='flex-1 relative h-[45vh] max-w-[30rem] border-red-500 hidden md:block'>
 
         <div className='bg-about w-full h-full bg-no-repeat bg-contain rounded-3xl transition
         hover:scale-125 hover:rounded-xl'></div>

@@ -7,6 +7,7 @@ import { useInView } from "framer-motion"
 import thomImg from '../../assets/thom.jpg'
 
 import '../../components/about/aboutme.css'
+
 import { AboutImg } from "../../components/about/aboutImg"
 import { AboutTexts } from "../../components/about/aboutTexts"
 // import { Datee } from "../../utils/dateBirthday"
@@ -29,7 +30,7 @@ export const About = () => {
             h3="Eu sou Desenvolvedor Front-end"
 
             text={`Meu nome é Thomás D'Angelo de Almeida Gomes e sou apaixonado por desenvolvimento web. Sempre gostei de computadores, tive meu primeiro contato com programação em 2021, fazia a parte visual dos projetos do curso, mas não podia estudar só front-end, só comecei a dar o devido foco após completar o curso. Atualmente estudo o curso "One Bit Code" e variações de vídeos pela internet.`}
-            text2={`Sou formado em Técnico em análise e Desenvolvimento de Sistemas, tenho conhecimento sobre tecnologias e ferramentas voltadas para o Front-end. Gosto de aprimorar e aprender por meio de pequenos projetos pessoais, assim posso ir aperfeiçoando minhas habilidades com as tecnologias.`}
+            text2={`Sou formado em Técnico em Análise e Desenvolvimento de Sistemas, tenho conhecimento sobre tecnologias e ferramentas voltadas para o Front-end. Gosto de aprimorar e aprender por meio de pequenos projetos pessoais, assim posso ir aperfeiçoando minhas habilidades com as tecnologias.`}
           />
         </div>
       </div>
