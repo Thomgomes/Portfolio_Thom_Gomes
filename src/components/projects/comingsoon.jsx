@@ -19,7 +19,7 @@ export const Comingsoon = () => {
 
         <span className="
         absolute top-0 left-0 w-full h-full rotate-[90deg]
-        before:content-[''] before:absolute before:top-0 before:left-0 before:w-[13.4px] before:before:sm2:w-[20px] before:h-[13.4px] before:sm2:h-[20px] before:bg-[#ae6211]
+        before:content-[''] before:absolute before:top-0 before:left-0 before:w-[13.4px] before:sm2:w-[20px] before:h-[13.4px] before:sm2:h-[20px] before:bg-[#ae6211]
         "
         ></span>
 
