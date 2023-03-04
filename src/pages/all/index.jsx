@@ -4,6 +4,7 @@ import { ContactPage } from "../contact"
 import { HomePage } from "../home"
 import { AboutPage } from "../sobre"
 import { ProjectsPage } from "../projects"
+import { SocialMedia } from "../../container/socialMedia"
 
 export const Allpages = () => {
   return (
@@ -13,6 +14,7 @@ export const Allpages = () => {
       <AbilityPage />
       <ProjectsPage />
       <ContactPage />
+      <SocialMedia/>
       {/* <div className="h-[4000px]"></div> */}
     </div>
   )

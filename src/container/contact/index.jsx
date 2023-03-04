@@ -64,11 +64,7 @@ export const Contact = () => {
 
               </form>
             </div>
-
-            <SocialMedias />
-
           </motion.div>
-
         </div>
       </div>
     </section>

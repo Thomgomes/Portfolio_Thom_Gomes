@@ -7,7 +7,7 @@ import { fadein } from '../../utils/variants'
 
 export const SocialMedias = () => {
   return (
-    <div className='container flex flex-col text-center items-center justify-center my-20 w-full'>
+    <div className='container flex flex-col text-center items-center justify-center w-full -mt-16 xl:-mt-24 2xl:-mt-56 py-8 lg:py-24 mb-28 lg:mb-20'>
       <h3 className='text-3xl mb-10'>Ou</h3>
       <div className='w-full h-auto max-w-[460px] items-center mx-auto px-5 text-2xl'>
         <ul className="flex justify-center gap-6 sm:gap-12 w-full lg:text-[60px] sm:text-[50px] text-[50px]  px-14">
