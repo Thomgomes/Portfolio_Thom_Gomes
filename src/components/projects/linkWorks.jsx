@@ -5,7 +5,6 @@ export const WorkLink = (props) => {
     <div>
       <Link 
       to={props.id}
-      target="_blank"
       >
         <button 
           className="w-36 py-2 bg-[#13131F] rounded-3xl border-2 border-[#bb700f] transition-all duration-300
