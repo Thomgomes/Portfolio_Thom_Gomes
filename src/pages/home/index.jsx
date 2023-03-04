@@ -23,7 +23,7 @@ export const HomePage = () => {
   
 
   return (
-    <div className="h-screen w-screen" id="home">
+    <div className="" id="home">
       <div className="relative">
       <Navbar/>
       <SectionHome/>

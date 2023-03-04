@@ -7,7 +7,7 @@ import { ProjectsPage } from "../projects"
 
 export const Allpages = () => {
   return (
-    <div className="bg-[#250821]  font-montserrat overflow-x-hidden text-white" >
+    <div className="bg-[#250821]  font-montserrat overflow-hidden text-white" >
       <HomePage />
       <AboutPage />
       <AbilityPage />

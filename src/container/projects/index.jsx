@@ -10,7 +10,7 @@ import { ProjectTitle } from "../../components/projects/ProjectTitle"
 
 export const Projects = () => {
   return (
-    <section className="section" id="projects">
+    <section className="section mb-0 lg:mb-28 xl:mb-48 2xl:mb-0" id="projects">
       <div className="container mx-auto my-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
           <div className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">

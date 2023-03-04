@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .gradient,
-.active{
+.gradient,
+.active {
   background: linear-gradient(
     92.23deg,
     #ae6211 21.43%,
     #c77e0b 50.63%,
     #d28d06 100%,
-    #dc9d00 117.04%,
+    #dc9d00 117.04%
   );
-} */
+}
 
 .active {
   color: #fff;
