@@ -1,5 +1,9 @@
+import { AllProjects } from "../../container/allProjects"
+
 export const AllProjectsPage = () => {
   return(
-    <div>Tela em Andamento</div>
+    <div className=" bg-[#250821] font-montserrat overflow-y-hidden text-white">
+      <AllProjects/>
+    </div>
   )
  }
