@@ -10,7 +10,7 @@ export const AllProjects = () => {
     <div className="">
       <div className="relative">
         <ProjectsNavbar />
-        <div className="h-[2000px] mt-14 xl:mt-32">
+        <div className="min-h-screen h-[800px] mt-14 xl:mt-32">
           <div className="container mx-auto">
 
             {/* section dos projetos */}
@@ -44,19 +44,19 @@ export const AllProjects = () => {
 
 
             {/* section dos projetos favoritos */}
-            <section className="mt-44 border">
-              {/* titulo */}
+            {/* <section className="mt-44 border">
+              titulo
               <div>
                 <h2>Projetos Favoritados</h2>
               </div>
 
-              {/*Slider dos projetos favoritos */}
+              Slider dos projetos favoritos
               <FavoriteProjects
                 fadein='left'
                 title="Em breve mais projetos"
               />
 
-            </section>
+            </section> */}
 
           </div>
         </div>

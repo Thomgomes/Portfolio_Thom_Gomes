@@ -56,7 +56,7 @@ const Cartao = ({ titulo, conteudo, imagem, alt }) => (
   <div className="cartao w-full h-auto p-8 border rounded-2xl text-[#9ca3af] text-justify transition-all ease-out duration-[0.3s]">
     {/* Titulo do projetos */}
     <h2
-      className="text-center text-3xl font-semibold mb-3 text-[#1f2937]"
+      className="text-center text-2xl md:text-3xl font-semibold mb-3 text-[#1f2937]"
     >
       {titulo}
     </h2>
@@ -74,13 +74,14 @@ const Slider = ({ children }) => {
   const TOTAL_DE_CARDS = CONTEUDO_CARTOES.length
 
   return (
-    <div className="carrosel-geral relative w-[36rem] h-96 ">
+    <div className="carrosel-geral relative w-[18rem] md:w-96 lg:w-[36rem] h-96 ">
       {atualAtivo > 0 && (
         <button
-          className="navegacao esquerda text-white text-[5rem] absolute flex items-center justify-center top-1/2 z-10 cursor-pointer select-none"
+          className="navegacao esquerda left-2 md:left-0 rounded-full text-[#d27a06] text-5xl md:text-[5rem] absolute flex items-center justify-center top-1/2 z-10 cursor-pointer select-none"
           onClick={() => setAtualAtivo((i) => i - 1)}
         >
           <TiChevronLeftOutline />
+          
         </button>
       )}
       {Children.map(children, (elementoFilho, i) => (
@@ -104,7 +105,7 @@ const Slider = ({ children }) => {
       ))}
       {atualAtivo < TOTAL_DE_CARDS - 1 && (
         <button
-          className="navegacao direita text-white text-[5rem] absolute flex items-center justify-center top-1/2 z-10 cursor-pointer select-none right-0"
+          className="navegacao direita right-2 md:right-0 rounded-full text-[#d27a06] text-5xl md:text-[5rem] absolute flex items-center justify-center top-1/2 z-10 cursor-pointer select-none "
           onClick={() => setAtualAtivo((i) => i + 1)}
         >
           <TiChevronRightOutline />
