@@ -1,7 +1,8 @@
 import { ProjectsNavbar } from "./navbar"
 
 import { FavoriteProjects } from "./favoritesProjects"
-import { Slider } from "./slider"
+import SliderApp from "./slider"
+
 
 
 export const AllProjects = () => {
@@ -18,10 +19,12 @@ export const AllProjects = () => {
               <div>
                 <h2>Projetos</h2>
               </div>
-              
+
               {/* Slider dos projetos */}
-              <Slider/>
-              
+              <div className="w full flex justify-center">
+                <SliderApp />
+              </div>
+
             </section>
 
 
