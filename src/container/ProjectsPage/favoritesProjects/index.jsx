@@ -7,11 +7,13 @@ import { ProjectCardComingsoon } from '../../../components/projects/ProjectCardC
 export const FavoriteProjects = () => {
   return (
     <div>
-      <ProjectCardComingsoon
-              fadein='left'
-              title="Em breve mais projetos"
+      <div className='max-w-2xl '>
+        <ProjectCardComingsoon
+          fadein='left'
+          title="Em breve mais projetos"
 
-            />
+        />
+      </div>
     </div>
   )
 }
