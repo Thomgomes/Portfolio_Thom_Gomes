@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   return (
     <navbar>
-      <div className=' text-white bg-[#f5fffa0c]'>
+      <div className='text-white'>
         <LayeredWaves waveName={wavesGolden} />
         <Bubbles/>
         <div className="relative container mx-auto px-4 h-24 flex items-center justify-between z-[1]"  id='navbar-view'>

@@ -1,9 +1,9 @@
-import { AllProjects } from "../../container/allProjects"
+import { AllProjects } from "../../container/ProjectsPage"
 
 export const AllProjectsPage = () => {
-  return(
-    <div className=" bg-[#250821] font-montserrat overflow-y-hidden text-white">
-      <AllProjects/>
+  return (
+    <div className=" bg-[#250821] font-montserrat overflow-hidden text-white">
+      <AllProjects />
     </div>
   )
- }
+}

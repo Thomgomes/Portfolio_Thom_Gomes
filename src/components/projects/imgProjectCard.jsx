@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
-import { BsDisplay, BsGithub } from 'react-icons/bs'
 
 import { fadein } from '../../utils/variants'
+
+import { BsDisplay, BsGithub } from 'react-icons/bs'
+
 import { BtnGithub } from './btn/btnGithub'
 import { BtnViewProject } from './btn/btnViewProject'
 
@@ -31,9 +33,6 @@ export const ImgProjectCard = (props) => {
         <BtnViewProject 
         link={props.view}
         />
-
-
-
     </motion.div>
   )
 }

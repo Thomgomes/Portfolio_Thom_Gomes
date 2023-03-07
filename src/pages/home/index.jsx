@@ -17,20 +17,20 @@ export const HomePage = () => {
   // }, {
   //   threshold: 1
   // })
-  
+
   // observer.observe(document.querySelector('#navbar-view'))
-  
-  
+
+
 
   return (
     <div className="" id="home">
       <div className="relative">
-      <Navbar/>
-      <SectionHome/>
-      <FixedNavIcons/>
+        <Navbar />
+        <SectionHome />
+        <FixedNavIcons />
       </div>
     </div>
 
-    
+
   )
 }
