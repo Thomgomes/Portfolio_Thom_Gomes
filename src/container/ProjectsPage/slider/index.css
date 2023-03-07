@@ -11,9 +11,9 @@
   filter: blur(calc(var(--abs-compensacao) * 1rem));
 }
 
-.cartao {
+/* .cartao {
   background-color: hsl(200deg, 40%, calc(100% - var(--abs-compensacao) * 50%));
-}
+} */
 
 .cartao p,
 .cartao h2 {

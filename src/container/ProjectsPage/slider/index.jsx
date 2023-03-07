@@ -53,19 +53,19 @@ const CONTEUDO_CARTOES = [
 ];
 
 const Cartao = ({ titulo, conteudo, imagem, alt }) => (
-  <div className="cartao w-full h-auto p-8 border rounded-2xl text-[#9ca3af] text-justify transition-all ease-out duration-[0.3s]">
+  <div className="cartao bg-[#222] w-full h-auto p-8 border border-[#bb700f] rounded-2xl text-[#bb700f] text-justify transition-all ease-out duration-[0.3s]">
     {/* Titulo do projetos */}
     <h2
-      className="text-center text-2xl md:text-3xl font-semibold mb-3 text-[#1f2937]"
+      className="text-center text-2xl md:text-3xl font-semibold mb-3 text-[#bb8c4e]"
     >
       {titulo}
     </h2>
     {/* imagem */}
     <div className="max-w-full">
-      <img className="rounded-xl" src={imagem} alt={alt} />
+      <img className="rounded-xl transition-all ease-out duration-[0.3s] hover:scale-105" src={imagem} alt={alt} />
     </div>
     {/* conteudo */}
-    <p>{conteudo}</p>
+    <p className="mt-2">{conteudo}</p>
   </div>
 );
 
