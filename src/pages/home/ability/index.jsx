@@ -1,4 +1,4 @@
-import { Ability } from "../../container/ability"
+import { Ability } from "../../../container/ability"
 
  export const AbilityPage = () => {
   return(

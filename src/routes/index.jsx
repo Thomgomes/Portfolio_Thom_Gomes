@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Allpages } from '../pages/all'
-import { AllProjectsPage } from '../pages/allProjects'
-// import { Home } from '../pages/home'
+import { Home } from '../pages/home'
+import { ProjectsPage } from '../pages/Projects'
+
 
 
 export const AppRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path="*" exact element={<Allpages />} />
-        <Route path="/" exact element={<Allpages />} />
-        <Route path="/home" exact element={<Allpages />} />
-        <Route path="/projects" exact element={<AllProjectsPage />} />
+        <Route path="*" exact element={<Home />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/home" exact element={<Home />} />
+        <Route path="/projects" exact element={<ProjectsPage />} />
       </Routes>
     </Router>
   )

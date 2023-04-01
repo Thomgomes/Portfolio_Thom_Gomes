@@ -1,36 +1,24 @@
-import { FixedNavIcons } from "../../components/fixedIconsBot"
-import { SectionHome } from "../../container/homeSection"
-import { Navbar } from "../../container/navbar"
 
+import { AbilityPage } from "./ability"
+import { ContactPage } from "./contact"
+import { HomePage } from "./home"
+import { AboutPage } from "./sobre"
+import { ProjectsPage } from "./projects"
+import { SocialMedia } from "../../container/socialMedia"
 
-
-
-export const HomePage = () => {
-
-  // const observer = new IntersectionObserver( entries => {
-  //   const fixedIconsBot = document.querySelector('.init-hidden')
-  //   console.log(entries)
-  //   if(entries.intersectionRatio > 1){
-  //     fixedIconsBot.classList.toggle('init-hidden')
-  //     console.log('ok')
-  //   }
-  // }, {
-  //   threshold: 1
-  // })
-
-  // observer.observe(document.querySelector('#navbar-view'))
-
-
-
+export const Home = () => {
   return (
-    <div className="" id="home">
-      <div className="relative">
-        <Navbar />
-        <SectionHome />
-        <FixedNavIcons />
-      </div>
+    <div className="bg-[#250821]  font-montserrat overflow-hidden text-white" >
+      <HomePage />
+      <AboutPage />
+      <AbilityPage />
+      <ProjectsPage />
+      <ContactPage />
+      <SocialMedia/>
+      {/* <div className="h-[4000px]"></div> */}
     </div>
-
-
   )
 }
+
+// bg-[#250821]
+// bg-[#13131F]

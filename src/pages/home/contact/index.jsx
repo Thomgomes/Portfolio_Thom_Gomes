@@ -1,4 +1,4 @@
-import { Contact } from "../../container/contact"
+import { Contact } from "../../../container/contact"
 
  export const ContactPage = () => {
   return(
