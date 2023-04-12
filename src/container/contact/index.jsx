@@ -1,4 +1,4 @@
-import '../../components/about/aboutme.css'
+
 import '../../components/contact/inputFocus.css'
 
 import { motion } from 'framer-motion'
