@@ -1,4 +1,4 @@
-import thomGif from '../../../public/TGAvatar.gif'
+import thomGif from '../../../src/assets/ThomGif.gif'
 import './imgbox.css'
 
 import { motion } from 'framer-motion'

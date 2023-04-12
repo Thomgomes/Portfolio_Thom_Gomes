@@ -2,15 +2,10 @@ import CountUp from "react-countup"
 
 import { useInView } from "framer-motion"
 
-
-
-import thomImg from '../../assets/thom.jpg'
-
 import '../../components/about/aboutme.css'
 
 import { AboutImg } from "../../components/about/aboutImg"
 import { AboutTexts } from "../../components/about/aboutTexts"
-// import { Datee } from "../../utils/dateBirthday"
 
 export const About = () => {
   // const [ref, inView] = useInView({
