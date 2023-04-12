@@ -1,19 +1,7 @@
-import CountUp from "react-countup"
-
-import { useInView } from "framer-motion"
-
-import '../../components/about/aboutme.css'
-
 import { AboutImg } from "../../components/about/aboutImg"
 import { AboutTexts } from "../../components/about/aboutTexts"
 
 export const About = () => {
-  // const [ref, inView] = useInView({
-  //   threshold: 0.5,
-  // })
-
-  // console.log(Datee)
-
 
   return (
     <section className="section lg:mb-48 xl:mb-0" id="about">
