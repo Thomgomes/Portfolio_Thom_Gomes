@@ -1,0 +1,11 @@
+.splide__arrow{
+  opacity: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #d28d06 !important;
+  transition: all .6s;
+}
+
+.splide__arrow:hover{
+  scale: 1.2;
+}

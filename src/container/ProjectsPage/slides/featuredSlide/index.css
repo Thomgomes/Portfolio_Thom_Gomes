@@ -1,0 +1,30 @@
+.splide__arrow{
+  opacity: 1 !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  background: #d28d06 !important;
+  transition: all .6s !important;
+}
+
+.splide__arrow:hover{
+  scale: 1.2;
+}
+
+.splide__pagination {
+  counter-reset: pagination-num !important;
+  gap: 2rem;
+}
+
+.splide__pagination__page:before {
+  counter-increment: pagination-num !important;
+  content: counter( pagination-num ) !important;
+}
+
+.splide__pagination__page.is-active {
+  background: transparent !important;
+}
+
+.splide__pagination li{
+  color: #d28d06;
+  scale: 1.4
+}
