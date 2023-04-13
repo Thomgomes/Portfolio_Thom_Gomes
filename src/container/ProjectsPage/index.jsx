@@ -1,5 +1,7 @@
 import { ProjectsNavbar } from "./navbar"
 
+import { motion } from "framer-motion"
+import { fadein } from "../../utils/variants"
 // import SliderApp from "./slider-offPage"
 import { SliderComponent } from "./slides/projectsSlide"
 import { FavoriteSliderComponent } from "./slides/favoriteSlide"
@@ -26,7 +28,12 @@ export const AllProjects = () => {
         <ProjectsNavbar />
 
         {/* Projetos em Destaque */}
-        <div className="mt-14 xl:mt-32">
+        <motion.div
+          variants={fadein('down', 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.3 }}
+          className="mt-14 xl:mt-32">
           <div className="container mx-auto">
             {/* titulo */}
             <div className="sm:mx-16 mb-10 min-w-min mx-auto rounded-bl-md rounded-tl-md relative">
@@ -44,10 +51,15 @@ export const AllProjects = () => {
             <FeaturedSliderComponent />
           </section>
 
-        </div>
+        </motion.div>
 
         {/* Projetos Favoritos */}
-        <div className="mt-14 xl:mt-32">
+        <motion.div
+          variants={fadein('up', 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.3 }}
+          className="mt-14 xl:mt-32">
           <div className="container mx-auto">
             {/* titulo */}
             <div className="sm:mx-16 mb-10 min-w-min mx-auto rounded-bl-md rounded-tl-md relative">
@@ -65,13 +77,18 @@ export const AllProjects = () => {
             <FavoriteSliderComponent />
           </section>
 
-        </div>
+        </motion.div>
 
         {/* Projetos */}
         <div className="mt-14 xl:mt-32">
           <div className="container mx-auto">
             {/* titulo */}
-            <div className="flex sm:flex-row sm:justify-between flex-col  sm:mx-16 mb-10 min-w-min mx-auto rounded-bl-md rounded-tl-md">
+            <motion.div
+              variants={fadein('up', 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.3 }}
+              className="flex sm:flex-row sm:justify-between flex-col  sm:mx-16 mb-10 min-w-min mx-auto rounded-bl-md rounded-tl-md">
 
               <div className="flex sm:mb-0 mb-4 justify-center md:justify-start">
                 <h2 className="pl-4 p-2 text-5xl font-semibold">Projetos</h2>
@@ -79,22 +96,27 @@ export const AllProjects = () => {
               </div>
 
               <button className=" py-2 px-2 bg-[#13131F] rounded-3xl border-2 border-[#bb700f] transition-all duration-300
-                                   hover:scale-125 hover:bg-[#8b5207] hover:text-white" 
-                                   onClick={toggleProjects} >{btnShowProjectsText}</button>
+                                   hover:scale-125 hover:bg-[#8b5207] hover:text-white"
+                onClick={toggleProjects} >{btnShowProjectsText}</button>
 
-            </div>
+            </motion.div>
           </div>
 
           {/* Slider dos projetos */}
           {btnShowProjectsText === 'Mostrar todos os projetos' ? (
 
-          <section className="">
-            <SliderComponent />
-          </section>
-          ): 
-          <section className="container mx-auto">
-            <AllProjectsGroup/>
-          </section>
+            <motion.section
+              variants={fadein('left', 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.3 }}
+              className="">
+              <SliderComponent />
+            </motion.section>
+          ) :
+            <section className="container mx-auto">
+              <AllProjectsGroup />
+            </section>
           }
 
         </div>

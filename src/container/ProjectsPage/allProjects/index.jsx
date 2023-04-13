@@ -3,6 +3,9 @@ import { BsGithub } from "react-icons/bs"
 import { Link } from "react-router-dom"
 import img1 from '../../../assets/imgProjects/depositodeconhecimento.jpg'
 
+import { motion } from "framer-motion"
+import { fadein } from "../../../utils/variants"
+
 const CONTEUDO_CARTOES = [
   {
     titulo: "Depósito de Conhecimento",
@@ -106,8 +109,13 @@ const CONTEUDO_CARTOES = [
   },
 ];
 
-const Card = ({ titulo, iniciado, conteudo, imagem, alt, repoLink, gitLink }) => (
-  <div className="bg-[#222] min-w-[368px] w-auto h-auto pt-5 p-7 mb-10 border border-[#bb700f] rounded-2xl text-[#bb700f] text-justify transition-all ease-out duration-[0.3s]">
+const Card = ({direction, titulo, iniciado, conteudo, imagem, alt, repoLink, gitLink }) => (
+  <motion.div
+    variants={fadein(direction, 0.3)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{ once: true, amount: 0.1 }}
+    className="bg-[#222] min-w-[368px] w-auto h-auto pt-5 p-7 mb-10 border border-[#bb700f] rounded-2xl text-[#bb700f] text-justify transition-all ease-out duration-[0.3s]">
     {/* Titulo do projetos */}
     <h2
       className="text-center text-2xl md:text-3xl font-semibold mb-5 text-[#bb8c4e]"
@@ -157,7 +165,7 @@ const Card = ({ titulo, iniciado, conteudo, imagem, alt, repoLink, gitLink }) =>
       </Link>
 
     </div>
-  </div>
+  </motion.div>
 );
 
 export const AllProjectsGroup = () => {
@@ -166,6 +174,7 @@ export const AllProjectsGroup = () => {
       {CONTEUDO_CARTOES.map((_, i) => (
         <Card
           key={i}
+          direction={i%2 == 0 ? 'left' : 'right'}
           titulo={CONTEUDO_CARTOES[i].titulo}
           iniciado={CONTEUDO_CARTOES[i].iniciado}
           conteudo={CONTEUDO_CARTOES[i].conteudo}
