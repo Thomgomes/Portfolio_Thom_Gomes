@@ -1,5 +1,6 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import "@splidejs/splide/dist/css/splide.min.css"
+
 import { BsDisplay } from "react-icons/bs"
 import { BsGithub } from "react-icons/bs"
 import { Link } from "react-router-dom"
@@ -7,7 +8,6 @@ import img1 from '../../../assets/imgProjects/depositodeconhecimento.jpg'
 import { useState } from 'react';
 
 import './index.css'
-
 
 const CONTEUDO_CARTOES = [
   {
@@ -67,12 +67,12 @@ const CONTEUDO_CARTOES = [
 ];
 
 const Cartao = ({ titulo, conteudo, imagem, alt, repoLink, gitLink }) => (
-  <div className="bg-[#222] w-full h-auto pt-5 p-7 border border-[#bb700f] rounded-2xl text-[#bb700f] text-justify transition-all ease-out duration-[0.3s]">
+  <div className="bg-[#222] min-w-[368px] w-auto h-auto pt-5 p-7 mb-10 border border-[#bb700f] rounded-2xl text-[#bb700f] text-justify transition-all ease-out duration-[0.3s]">
     {/* Titulo do projetos */}
     <h2
       className="text-center text-2xl md:text-3xl font-semibold mb-5 text-[#bb8c4e]"
     >
-      {titulo}
+      {titulo} 
     </h2>
     {/* imagem */}
     <div className="max-w-full">
@@ -88,10 +88,9 @@ const Cartao = ({ titulo, conteudo, imagem, alt, repoLink, gitLink }) => (
 
       {/* Botão do repositorio */}
       <Link to={gitLink}>
-        <div className=" -bottom-full right-12 
-              group-hover:bottom-28 transition-all duration-700 z-50">
+        <div className="">
           <button
-            className="flex gap-1 items-center py-2 px-2 bg-[#13131F] rounded-3xl border-2 border-[#bb700f] transition-all duration-300
+            className="flex gap-1 items-center py-2 px-2 bg-[#13131F] rounded-3xl border-2 border-[#bb700f] transition-all duration-300 
           hover:scale-125 hover:bg-[#8b5207] hover:text-white
           ">
             Ver Repositório <BsGithub />
@@ -101,8 +100,7 @@ const Cartao = ({ titulo, conteudo, imagem, alt, repoLink, gitLink }) => (
 
       {/* Botão do Deploy */}
       <Link to={repoLink}>
-        <div className=" -bottom-full right-12 
-              group-hover:bottom-10 transition-all duration-700 z-50">
+        <div className="">
           <button
             className="flex gap-1 items-center py-2 px-2 bg-[#13131F] rounded-3xl border-2 border-[#bb700f] transition-all duration-300
           hover:scale-125 hover:bg-[#8b5207] hover:text-white
@@ -123,20 +121,32 @@ export const SliderComponent = () => {
     <div>
       <Splide options={{
         type: "slide",
-        perPage: 3,
+        perPage: 4,
+        perMove: 1,
+        gap: 150,
         breakpoints: {
-          768:{
-            perPage: 2
+          1439: {
+            perPage: 3,
+            gap: '1.7rem'
           },
-          640: {
-            perPage: 1
+          1185: {
+            perPage: 2,
+            gap: '1.4rem'
+          },
+          791: {
+            perPage: 1,
+            gap: '1rem'
+          },
+          445: {
+            perPage: 1,
+            gap: '1rem',
+            padding: 0,
           },
         },
-        perMove: 1,
-        gap: '2rem',
-        padding: '3.5rem',
-        drag: 'free',
-        snap: true,
+        padding: '2.5rem',
+        rewind: true,
+        rewindSpeed: 2600,
+        speed: 1300,
         pagination: false,
 
       }}>

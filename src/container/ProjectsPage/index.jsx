@@ -16,7 +16,7 @@ export const AllProjects = () => {
 
             {/* section dos projetos */}
             <section className="mb-10">
-              
+
               {/* titulo */}
               <div className="sm:mx-16 mb-10 min-w-min mx-auto rounded-bl-md rounded-tl-md relative">
 
@@ -26,33 +26,15 @@ export const AllProjects = () => {
 
               </div>
 
-              {/* Slider dos projetos */}
-              <div className="">
-                <SliderComponent />
-              </div>
-
             </section>
-
-
-
-            {/* section dos projetos favoritos */}
-            {/* <section className="mt-44 border">
-              titulo
-              <div>
-                <h2>Projetos Favoritados</h2>
-              </div>
-
-              Slider dos projetos favoritos
-              <FavoriteProjects
-                fadein='left'
-                title="Em breve mais projetos"
-              />
-
-            </section> */}
-
           </div>
-        </div>
 
+          {/* Slider dos projetos */}
+          <section className="">
+            <SliderComponent />
+          </section>
+
+        </div>
       </div>
     </div>
   )
