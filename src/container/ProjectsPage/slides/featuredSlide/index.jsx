@@ -68,7 +68,7 @@ const CONTEUDO_CARTOES = [
 
 
 
-const Cartao = ({ titulo, conteudo, imagem, alt, repoLink, gitLink }) => (
+const Card = ({ titulo, conteudo, imagem, alt, repoLink, gitLink }) => (
   <div className="bg-[#222] min-w-[368px] w-auto h-auto 2xl:max-h-[900px] md:max-h-[700px] pt-5 p-7 mb-10 border border-[#bb700f] rounded-2xl text-[#bb700f] text-justify transition-all ease-out duration-[0.3s]">
     {/* Titulo do projetos */}
     <h2
@@ -151,7 +151,7 @@ export const FeaturedSliderComponent = () => {
       }}>
         {CONTEUDO_CARTOES.map((_, i) => (
           <SplideSlide key={i}>
-            <Cartao
+            <Card
               titulo={CONTEUDO_CARTOES[i].titulo}
               conteudo={CONTEUDO_CARTOES[i].conteudo}
               imagem={CONTEUDO_CARTOES[i].imagem}

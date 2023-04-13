@@ -27,12 +27,12 @@ export const ImgProjectCard = (props) => {
         src={props.img}
         alt="" />
 
-        <BtnGithub 
+      <BtnGithub
         link={props.github}
-        />
-        <BtnViewProject 
+      />
+      <BtnViewProject
         link={props.view}
-        />
+      />
     </motion.div>
   )
 }

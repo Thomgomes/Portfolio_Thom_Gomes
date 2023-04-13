@@ -52,8 +52,8 @@ const CONTEUDO_CARTOES = [
   },
 ];
 
-const Cartao = ({ titulo, conteudo, imagem, alt }) => (
-  <div className="cartao bg-[#222] w-full h-auto p-8 border border-[#bb700f] rounded-2xl text-[#bb700f] text-justify transition-all ease-out duration-[0.3s]">
+const Card = ({ titulo, conteudo, imagem, alt }) => (
+  <div className="Card bg-[#222] w-full h-auto p-8 border border-[#bb700f] rounded-2xl text-[#bb700f] text-justify transition-all ease-out duration-[0.3s]">
     {/* Titulo do projetos */}
     <h2
       className="text-center text-2xl md:text-3xl font-semibold mb-3 text-[#bb8c4e]"
@@ -119,7 +119,7 @@ const SliderApp = () => (
   <div>
     <Slider>
       {CONTEUDO_CARTOES.map((_, i) => (
-        <Cartao
+        <Card
           key={i}
           titulo={CONTEUDO_CARTOES[i].titulo}
           conteudo={CONTEUDO_CARTOES[i].conteudo}
