@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export const BtnGithub = (props) => {
   return (
-    <Link to={props.link}>
+    <Link to={props.link} target="_blank">
       <div className="absolute -bottom-full right-12 
               group-hover:bottom-28 transition-all duration-700 z-50">
         <button

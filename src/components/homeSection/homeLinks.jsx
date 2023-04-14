@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaBehanceSquare } from 'react-icons/fa'
 
 import { motion } from 'framer-motion'
 
@@ -27,6 +27,23 @@ export const HomeLinks = () => {
         </motion.li>
 
         <motion.li
+          variants={fadein('up', 0.3)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.7 }}
+        >
+          <Link
+            to="https://www.behance.net/thomsdangelo"
+            className='text-blue-600/80 transition-all ease-linear
+                       hover:text-blue-600
+                      '
+            target="_blank"
+          >
+            <FaBehanceSquare/>
+          </Link>
+        </motion.li>
+
+        <motion.li
           variants={fadein('right', 0.3)}
           initial='hidden'
           whileInView={'show'}
@@ -42,6 +59,7 @@ export const HomeLinks = () => {
             <FaGithub />
           </Link>
         </motion.li>
+
       </ul>
 
 

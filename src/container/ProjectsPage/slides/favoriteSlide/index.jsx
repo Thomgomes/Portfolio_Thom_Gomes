@@ -64,7 +64,7 @@ const Card = ({ titulo, conteudo, imagem, alt, repoLink, gitLink }) => (
         <div className='flex md:flex-col lmd:items-start lmd:justify-around md:items-end md:justify-around justify-between'>
 
           {/* Botão do repositorio */}
-          <Link to={gitLink}>
+          <Link to={gitLink} target="_blank">
             <div className="">
               <button
                 className="flex gap-1 items-center py-2 px-2 bg-[#13131F] rounded-3xl border-2 border-[#bb700f] transition-all duration-300 
@@ -76,7 +76,7 @@ const Card = ({ titulo, conteudo, imagem, alt, repoLink, gitLink }) => (
           </Link>
 
           {/* Botão do Deploy */}
-          <Link to={repoLink}>
+          <Link to={repoLink} target="_blank">
             <div className="">
               <button
                 className="flex gap-1 items-center py-2 px-2 bg-[#13131F] rounded-3xl border-2 border-[#bb700f] transition-all duration-300

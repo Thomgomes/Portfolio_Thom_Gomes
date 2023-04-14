@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { motion } from 'framer-motion'
 
 import { fadein } from '../../utils/variants'
+import { FaBehanceSquare } from "react-icons/fa"
 
 export const SocialMedias = () => {
   return (
@@ -29,7 +30,7 @@ export const SocialMedias = () => {
           </motion.li>
 
           <motion.li
-            variants={fadein('', 0.3)}
+            variants={fadein('down', 0.3)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once:false, amount: 0.7 }}
@@ -44,6 +45,23 @@ export const SocialMedias = () => {
               <BsLinkedin />
             </Link>
           </motion.li>
+
+          <motion.li
+          variants={fadein('up', 0.3)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.7 }}
+        >
+          <Link
+            to="https://www.behance.net/thomsdangelo"
+            className='text-blue-600/80 transition-all ease-linear
+                       hover:text-blue-600
+                      '
+            target="_blank"
+          >
+            <FaBehanceSquare/>
+          </Link>
+        </motion.li>
 
           <motion.li
             variants={fadein('right', 0.3)}

@@ -141,7 +141,7 @@ const Card = ({direction, titulo, iniciado, conteudo, imagem, alt, repoLink, git
     <div className='flex justify-between'>
 
       {/* Botão do repositorio */}
-      <Link to={gitLink}>
+      <Link to={gitLink} target="_blank">
         <div className="">
           <button
             className="flex gap-1 items-center py-2 px-2 bg-[#13131F] rounded-3xl border-2 border-[#bb700f] transition-all duration-300 
@@ -153,7 +153,7 @@ const Card = ({direction, titulo, iniciado, conteudo, imagem, alt, repoLink, git
       </Link>
 
       {/* Botão do Deploy */}
-      <Link to={repoLink}>
+      <Link to={repoLink} target="_blank">
         <div className="">
           <button
             className="flex gap-1 items-center py-2 px-2 bg-[#13131F] rounded-3xl border-2 border-[#bb700f] transition-all duration-300
