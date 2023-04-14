@@ -114,7 +114,7 @@ export const AllProjects = () => {
               <SliderComponent />
             </motion.section>
           ) :
-            <section className="container mx-auto">
+            <section className="sm2:container sm2:mx-auto">
               <AllProjectsGroup />
             </section>
           }
