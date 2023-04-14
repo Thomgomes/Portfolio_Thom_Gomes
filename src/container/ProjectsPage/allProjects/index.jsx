@@ -7,6 +7,7 @@ import { fadein } from "../../../utils/variants"
 import { useState } from "react"
 
 import '../../../components/contact/inputFocus.css'
+import { ThomtyError } from "../../../components/ThomtyError"
 
 const CONTEUDO_CARTOES = [
   {
@@ -172,7 +173,7 @@ export const AllProjectsGroup = () => {
 
   const searchCards = CONTEUDO_CARTOES.filter((i) => i.titulo.toLowerCase().includes(searchToName))
 
-  console.log(search)
+  console.log(searchCards.length)
 
 
   return (
@@ -194,30 +195,38 @@ export const AllProjectsGroup = () => {
                       after:text-base after:text-[#999999] after:leading-[1.2] after:content-[attr(data-paceholder)] after:block after:w-full after:absolute after:top-4 after:left-0 after:pl-[5px] after:transition-all 
                       "
           ></span>
-          <span className="absolute right-7 bottom-3 text-xl text-[#adadad]"><GoSearch/></span>
+          <span className="absolute right-7 bottom-3 text-xl text-[#adadad]"><GoSearch /></span>
         </div>
       </div>
-      <div className="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-4">
-        {searchCards.map((_, i) => (
-          <motion.div
-            variants={fadein("left", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            <Card
-              key={i}
-              titulo={searchCards[i].titulo}
-              iniciado={searchCards[i].iniciado}
-              conteudo={searchCards[i].conteudo}
-              imagem={searchCards[i].imagem}
-              alt={searchCards[i].alt}
-              repoLink={searchCards[i].repoLink}
-              gitLink={searchCards[i].gitLink}
-            />
-          </motion.div>
-        ))}
-      </div>
+      {searchCards.length == 0 ? (
+        <ThomtyError
+          search={search}
+          onClick={(e => setSearch(''))}
+        />
+      ) : (
+        <div className="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-4">
+          {searchCards.map((_, i) => (
+            <motion.div
+              variants={fadein("left", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.1 }}
+            >
+              <Card
+                key={i}
+                titulo={searchCards[i].titulo}
+                iniciado={searchCards[i].iniciado}
+                conteudo={searchCards[i].conteudo}
+                imagem={searchCards[i].imagem}
+                alt={searchCards[i].alt}
+                repoLink={searchCards[i].repoLink}
+                gitLink={searchCards[i].gitLink}
+              />
+            </motion.div>
+          ))}
+        </div>
+      )}
+
     </>
   )
 }

@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ['Montserrat'],
+        pangolin: ['Pangolin']
       },
       screens: {
         'lmd': '900px',
