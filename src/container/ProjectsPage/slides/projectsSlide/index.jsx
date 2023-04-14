@@ -76,7 +76,7 @@ const Card = ({ titulo, iniciado, conteudo, imagem, alt, repoLink, gitLink }) =>
   <div className="bg-[#222] min-w-[368px] w-auto h-auto pt-5 p-7 mb-10 border border-[#bb700f] rounded-2xl text-[#bb700f] text-justify transition-all ease-out duration-[0.3s]">
     {/* Titulo do projetos */}
     <h2
-      className="text-center text-2xl md:text-3xl font-semibold mb-5 text-[#bb8c4e]"
+      className="text-center text-2xl md:text-3xl font-semibold mb-5 text-[#bb8c4e] min-h-[72px]"
     >
       {titulo} 
     </h2>
